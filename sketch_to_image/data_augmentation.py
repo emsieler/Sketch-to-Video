@@ -34,11 +34,11 @@ for image_file in image_files:
     image_path = os.path.join(input_folder, image_file)
     image = Image.open(image_path)
 
-    for i in range(724):
+    for i in range(1000):
         random_h = random_horizontal_flip(image)
         random_v = random_vertical_flip(random_h)
         scaled_image = random_scale(random_v)
         augmented_image_path = os.path.join(output_folder, f'aug_{i}_{image_file}')
         scaled_image.save(augmented_image_path)
 
-        print(f"Augmented image {i+1}/250 saved to {augmented_image_path}")
+        print(f"Augmented image {i+1}/1000 saved to {augmented_image_path}")
