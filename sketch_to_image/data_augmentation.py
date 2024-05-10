@@ -34,7 +34,7 @@ for image_file in image_files:
     image_path = os.path.join(input_folder, image_file)
     image = Image.open(image_path)
 
-    for i in range(724):
+    for i in range(1000):
         random_h = random_horizontal_flip(image)
         random_v = random_vertical_flip(random_h)
         scaled_image = random_scale(random_v)
