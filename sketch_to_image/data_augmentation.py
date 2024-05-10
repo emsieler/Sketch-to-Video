@@ -41,4 +41,4 @@ for image_file in image_files:
         augmented_image_path = os.path.join(output_folder, f'aug_{i}_{image_file}')
         scaled_image.save(augmented_image_path)
 
-        print(f"Augmented image {i+1}/250 saved to {augmented_image_path}")
+        print(f"Augmented image {i+1}/1000 saved to {augmented_image_path}")
